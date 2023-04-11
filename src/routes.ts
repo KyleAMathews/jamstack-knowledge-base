@@ -1,21 +1,21 @@
-import { Dataset, createCheerioRouter } from 'crawlee';
+import { Dataset, createCheerioRouter } from "crawlee"
 
-export const router = createCheerioRouter();
+export const router = createCheerioRouter()
 
 router.addDefaultHandler(async ({ enqueueLinks, log }) => {
-    // log.info(`enqueueing new URLs`);
-    await enqueueLinks({
-        // globs: ['https://bricolage.io/**'],
-        label: 'detail',
-    });
-});
+  // log.info(`enqueueing new URLs`);
+  await enqueueLinks({
+    // globs: ['https://bricolage.io/**'],
+    label: `detail`,
+  })
+})
 
-router.addHandler('detail', async ({ request, $, log }) => {
-    const title = $('title').text();
-    log.info(`${title}`, { url: request.loadedUrl });
+router.addHandler(`detail`, async ({ request, $, log }) => {
+  const title = $(`title`).text()
+  log.info(`${title}`, { url: request.loadedUrl })
 
-    await Dataset.pushData({
-        url: request.loadedUrl,
-        title,
-    });
-});
+  await Dataset.pushData({
+    url: request.loadedUrl,
+    title,
+  })
+})
