@@ -1,0 +1,32 @@
+{
+    "name": "my-crawler",
+    "version": "0.0.1",
+    "type": "module",
+    "description": "This is an example of a Crawlee project.",
+    "dependencies": {
+        "@dqbd/tiktoken": "^1.0.3",
+        "@pinecone-database/pinecone": "0.0.12",
+        "bottleneck": "^2.19.5",
+        "crawlee": "^3.0.0",
+        "langchain": "^0.0.49",
+        "p-queue": "^7.3.4",
+        "sanitize-html": "^2.10.0",
+        "turndown": "^7.1.2",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@apify/tsconfig": "^0.1.0",
+        "@types/node": "^18.0.0",
+        "ts-node": "^10.8.0",
+        "typescript": "^5.0.0"
+    },
+    "scripts": {
+        "start": "npm run start:dev",
+        "start:prod": "node dist/main.js",
+        "start:dev": "ts-node-esm -T src/main.ts",
+        "build": "tsc",
+        "test": "echo \"Error: oops, the actor has no tests yet, sad!\" && exit 1"
+    },
+    "author": "It's not you it's me",
+    "license": "ISC"
+}
