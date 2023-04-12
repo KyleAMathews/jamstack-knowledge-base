@@ -12,7 +12,8 @@
         "p-queue": "^7.3.4",
         "sanitize-html": "^2.10.0",
         "turndown": "^7.1.2",
-        "uuid": "^9.0.0"
+        "uuid": "^9.0.0",
+        "yaml": "^2.2.1"
     },
     "devDependencies": {
         "@apify/tsconfig": "^0.1.0",

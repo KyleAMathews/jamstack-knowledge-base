@@ -16,9 +16,17 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "fuse.js": "^6.6.2",
     "gatsby": "^5.8.1",
+    "highlight-words-core": "^1.2.2",
+    "langchain": "^0.0.53",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.6",
+    "remark": "^14.0.2",
+    "remove-markdown": "^0.5.0",
+    "stopword": "^2.0.8",
+    "strip-markdown": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",

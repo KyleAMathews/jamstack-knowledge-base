@@ -1,0 +1,11 @@
+# - name: Netlify
+  # baseUrls:
+    # # - https://www.netlify.com/
+    # # - https://docs.netlify.com/
+  # serviceType: hosting
+
+- name: Vercel
+  baseUrls:
+    - https://vercel.com/
+  serviceType: hosting
+
